@@ -16,40 +16,38 @@ export const Section = ({ bgColor, children }) => (
 
 export const Heading = ({ children }) => (
   <div className="col-span-2 md:col-span-1 mx-auto">
-    <h1
+    <h2
       className="font-aileron md:text-[7rem] text-6xl md:-tracking-[.6rem] -tracking-[.3rem] lg:leading-[.6]"
       style={{ lineHeight: "70%" }}
     >
       {children}
-    </h1>
+    </h2>
   </div>
 );
 
-// `children` shall consist only of `Quote`s
-export const Body = ({ cur, setCur, children }) => {
-  const NavDot = ({ cur, onClick }) => (
-    <Icon
-      icon="icon-park-outline:dot"
-      width={20}
-      cursor={"pointer"}
-      className={cur === 0 && "scale-150"}
-      onClick={onClick}
-    />
-  );
+const NavDot = ({ cur, onClick }) => (
+  <Icon
+    icon="icon-park-outline:dot"
+    width={20}
+    cursor={"pointer"}
+    className={cur === 0 && "scale-150"}
+    onClick={onClick}
+  />
+);
 
-  return (
-    <div className="col-span-2 md:col-span-1 relative">
-      <div className="flex overflow-hidden">
-        {children}
-      </div>
-      <div className="flex flex-row justify-center my-7">
-        <NavDot cur={cur} onClick={() => setCur(0)} />
-        <NavDot cur={cur} onClick={() => setCur(1)} />
-        <NavDot cur={cur} onClick={() => setCur(2)} />
-      </div>
+// `children` shall consist only of `Quote`s
+export const Body = ({ cur, setCur, children }) => (
+  <div className="col-span-2 md:col-span-1 relative">
+    <div className="flex overflow-hidden">
+      {children}
     </div>
-  );
-};
+    <div className="flex flex-row justify-center my-7">
+      <NavDot cur={cur} onClick={() => setCur(0)} />
+      <NavDot cur={cur} onClick={() => setCur(1)} />
+      <NavDot cur={cur} onClick={() => setCur(2)} />
+    </div>
+  </div>
+);
 
 // `children` shall consist only of one `QuoteSource` which shall be:
 // * locally defined

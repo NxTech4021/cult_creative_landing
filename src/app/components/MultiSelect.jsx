@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Icon } from "@iconify/react";
 
 const MultiSelect = ({
@@ -111,7 +111,7 @@ const MultiSelect = ({
           <div className="absolute left-0 bg-slate-50 my-1 rounded-md p-2 w-[100%] max-h-52 overflow-scroll animate-form-animation">
             <div className="flex flex-col gap-3">
               {data.length < 1 ? (
-                <h1>No data.</h1>
+                <p>No data.</p>
               ) : (
                 data.map((elem, i) => (
                   <div

@@ -11,7 +11,7 @@ const ContactUs = () => {
     <>
       <PageMeta
         title="Contact Us"
-        desc=""
+        desc="Connect with Cult Creative. Reach out to our dedicated support team via email or Instagram for any inquiries or assistance."
       />
       <main className="flex min-h-screen flex-col">
         <Header logo={"/images/logo.svg"} />
@@ -30,10 +30,9 @@ const ContactUs = () => {
             >
               <div>
                 <h1 className="lg:text-8xl xl:text-8xl text-5xl xl:-tracking-[.3rem] lg:-tracking-[.3rem] -tracking-[.1rem]">
-                  get
-                  <span className="font-times  font-medium">
-                    {" "}
-                    in <span className="italic xl:-tracking-[.5rem]"> touch</span>
+                  get{" "}
+                  <span className="font-times font-medium">
+                    in <span className="italic xl:-tracking-[.5rem]">touch</span>
                   </span>
                 </h1>
               </div>

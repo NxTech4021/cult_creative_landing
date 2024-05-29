@@ -3,14 +3,13 @@ import PageMeta from "@/app/components/PageMeta";
 import * as rc from "@/app/components/resource-content";
 
 const Resource1 = () => {
-  const title =
-    "Unlocking the Power of Brand Deals: A Guide for Content Creators";
+  const title = "Unlocking the Power of Brand Deals: A Guide for Content Creators";
 
   return (
     <>
       <PageMeta
         title={title}
-        desc=""
+        desc="A guide to securing brand deals with Cult Creative to simplify the process of connecting with brands, letting creators grow their careers authentically and lucratively."
       />
       <rc.Page>
         <rc.Content>
@@ -108,6 +107,9 @@ const Resource1 = () => {
         <rc.Keywords>
           <rc.Keyword value="Creator Economy Malaysia" />
           <rc.Keyword value="Brand Deals for Creators" />
+          <rc.Keyword value="Content Creator Tips" />
+          <rc.Keyword value="Authentic Brand Collaborations" />
+          <rc.Keyword value="Negotiating Brand Contracts" />
         </rc.Keywords>
       </rc.Page>
     </>

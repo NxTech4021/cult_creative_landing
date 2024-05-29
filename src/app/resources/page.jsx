@@ -10,7 +10,7 @@ const Resources = () => {
     <>
       <PageMeta
         title="Resources"
-        desc=""
+        desc="Discover invaluable insights and resources at Cult Creative’s blog. Dive into inspiration, expert tips, and stay ahead of industry trends with our creator-friendly content hub."
       />
       <main className="flex min-h-screen flex-col bg-[#F4F4F4] text-white">
         <Header logo={"/images/logo.svg"} />

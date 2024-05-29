@@ -9,7 +9,7 @@ const Resource6 = () => {
     <>
       <PageMeta
         title={title}
-        desc=""
+        desc="Creator marketing thrives on authenticity. Brands can easily initiate UGC campaigns through platforms like Cult Creative, which connects brands with suitable creators hassle-free."
       />
       <rc.Page>
         <rc.Content>
@@ -80,9 +80,11 @@ const Resource6 = () => {
           </rc.p>
         </rc.Content>
         <rc.Keywords>
-          {/* TODO: No keywords given */}
-          <rc.Keyword value="" />
-          <rc.Keyword value="" />
+          <rc.Keyword value="Creator Marketing Benefits" />
+          <rc.Keyword value="Influencer Marketing Advantages" />
+          <rc.Keyword value="Building Brand Trust with Influencers" />
+          <rc.Keyword value="Effective UGC Strategies" />
+          <rc.Keyword value="Simplified UGC Campaign Management" />
         </rc.Keywords>
       </rc.Page>
     </>

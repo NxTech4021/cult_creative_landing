@@ -9,7 +9,7 @@ const Resource3 = () => {
     <>
       <PageMeta
         title={title}
-        desc=""
+        desc="Big brands today partner with creators for marketing. Learn about monetization strategies and how to engage authentically with your audience. And beware of competition and burnout."
       />
       <rc.Page>
         <rc.Content>
@@ -154,9 +154,12 @@ const Resource3 = () => {
           </rc.p>
         </rc.Content>
         <rc.Keywords>
-          {/* TODO: No keywords given */}
-          <rc.Keyword value="" />
-          <rc.Keyword value="" />
+          <rc.Keyword value="Content Creation Career" />
+          <rc.Keyword value="Content Creator Tips" />
+          <rc.Keyword value="Building an Online Presence" />
+          <rc.Keyword value="Social Media Engagement" />
+          <rc.Keyword value="Monetizing Content Creation" />
+          <rc.Keyword value="Creator Economy Malaysia" />
         </rc.Keywords>
       </rc.Page>
     </>

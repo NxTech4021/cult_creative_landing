@@ -10,7 +10,7 @@ const Newsroom = () => {
     <>
       <PageMeta
         title="Newsroom"
-        desc=""
+        desc="Stay updated with Cult Creative’s newsroom. Access the latest announcements, press releases and media coverage to stay informed about our journey and industry impact."
       />
       <main className="flex min-h-screen flex-col bg-[#F4F4F4] text-white">
         <Header logo={"/images/logo.svg"} />

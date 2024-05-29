@@ -2,13 +2,13 @@
 
 import ReactGA from "react-ga4";
 
-// Take attributes instead of `children` because:
-// * we don't want to allow the user to pass anything but a string
-// * there is no need to type a closing tag
-export const PageMeta = ({ title, desc }) => {
-  // This measurement ID is linked to the Google Analytics account for ljcnexea@m.nexea.co
-  // TODO: Change it once the main Analytics account has been set up
-  // ReactGA.initialize("G-DQ9HQYL7Y2");
+// If unspecified:
+// * `ogTitle` matches `title`
+// * `ogType` has value `"website"`
+// * `ogDesc` matches `desc`
+// More details: https://ogp.me/
+// Guidelines: https://ahrefs.com/blog/open-graph-meta-tags/
+export const PageMeta = ({ title, desc, ogTitle, ogType, ogImage, ogUrl, ogDesc }) => {
   ReactGA.initialize("G-NP1X4Y7S7R");
 
   return (
@@ -21,6 +21,13 @@ export const PageMeta = ({ title, desc }) => {
       */}
       <title>{`${title} - Cult Creative`}</title>
       <meta name="description" content={desc} />
+      {/* Do not insert `<title>` suffix; guidelines recommend that branding be left out */}
+      <meta property="og:title" content={ogTitle || title} />
+      <meta property="og:type" content={ogType || "website"} />
+      <meta property="og:image" content={ogImage} />
+      <meta property="og:url" content={ogUrl} />
+      {/* `og:desc` states that this is optional, but `desc` is a nice default to have */}
+      <meta property="og:desc" content={ogDesc || desc} />
     </>
   );
 };

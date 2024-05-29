@@ -139,12 +139,12 @@ const CreatorForm = () => {
                 </h1>
               </div>
               <div className="flex flex-col gap-6">
-                <h1 className="text-xl font-bold -tracking-[.05rem]">
+                <p className="text-xl font-bold -tracking-[.05rem]">
                   We’re excited to work together.
                   <br />
                   Tell us who you are and we’ll get back to you with suitable
                   brand deals.
-                </h1>
+                </p>
                 <Formik
                   initialValues={{
                     name: "",

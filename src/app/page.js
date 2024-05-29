@@ -22,7 +22,8 @@ const Home = () => {
     <>
       <PageMeta
         title="Welcome"
-        desc=""
+        desc="Find top creators from across Southeast Asia for your next project. Trusted by leading companies, our platform simplifies the hiring process for both parties."
+        ogTitle="Discover UGC Creators, Brand Deals and Creator Marketing Solutions with SEA’s Chosen Platform"
       />
       <main className="flex min-h-screen flex-col max-w-[100vw]">
         <Header logo="/images/logo.svg" />

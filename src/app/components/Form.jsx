@@ -123,7 +123,7 @@ const BrandForm = ({ color, image }) => {
         />
       </div>
       <div className="flex flex-col gap-5 xl:basis-1/2 text-[#F4F4F4]">
-        <h1
+        <h2
           className="md:text-[7rem] text-6xl font-aileron md:-tracking-[.5rem] text-pretty max-w-[30rem]"
           style={{
             lineHeight: 0.75,
@@ -131,7 +131,7 @@ const BrandForm = ({ color, image }) => {
         >
           power up <span className="font-times">your</span>{" "}
           <span className="font-times italic -tracking-[.5rem]">marketing</span>
-        </h1>
+        </h2>
         <div>
           <a
             href="https://calendly.com/danishmokhtar/30min?month=2024-03"
@@ -147,9 +147,9 @@ const BrandForm = ({ color, image }) => {
           </a>
         </div>
         <div className="flex flex-col gap-6">
-          <h1 className="text-xl font-bold -tracking-[.05rem]">
+          <p className="text-xl font-bold -tracking-[.05rem]">
             Want to get in touch? Tell us what you need.
-          </h1>
+          </p>
           <Formik
             initialValues={{
               name: "",

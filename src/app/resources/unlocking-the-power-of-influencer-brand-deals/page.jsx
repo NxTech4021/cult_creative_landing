@@ -9,7 +9,7 @@ const Resource2 = () => {
     <>
       <PageMeta
         title={title}
-        desc=""
+        desc="Creators signed up with Cult Creative can identify their niche, build credibility and land brand deals hassle-free. We handle the administrative work so you can focus on being creative."
       />
       <rc.Page>
         <rc.Content>
@@ -77,9 +77,10 @@ const Resource2 = () => {
           </rc.p>
         </rc.Content>
         <rc.Keywords>
-          {/* TODO: No keywords given */}
-          <rc.Keyword value="" />
-          <rc.Keyword value="" />
+          <rc.Keyword value="UGC Marketing" />
+          <rc.Keyword value="Influencer Marketing" />
+          <rc.Keyword value="Brand Deals" />
+          <rc.Keyword value="Content Creator Tips" />
         </rc.Keywords>
       </rc.Page>
     </>

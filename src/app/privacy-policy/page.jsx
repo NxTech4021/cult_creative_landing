@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
     <>
       <PageMeta
         title="Privacy Policy"
-        desc=""
+        desc="Safeguard your data with Cult Creative’s Privacy Policy. Learn how we protect your information and ensure transparency in our practices."
       />
       <main className="flex min-h-screen flex-col bg-[#F4F4F4] text-white">
         <Header logo={"/images/logo.svg"} />

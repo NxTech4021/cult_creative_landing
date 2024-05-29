@@ -9,7 +9,7 @@ const Resource4 = () => {
     <>
       <PageMeta
         title={title}
-        desc=""
+        desc="Stay motivated by setting goals and engaging with a supportive community. Create high-quality content by understanding your audience, prioritising consistency and using engaging visuals."
       />
       <rc.Page>
         <rc.Content>
@@ -129,9 +129,13 @@ const Resource4 = () => {
           </rc.p>
         </rc.Content>
         <rc.Keywords>
-          {/* TODO: No keywords given */}
-          <rc.Keyword value="" />
-          <rc.Keyword value="" />
+          <rc.Keyword value="Content Creation Inspiration" />
+          <rc.Keyword value="Motivation for Content Creators" />
+          <rc.Keyword value="Quality Content Strategies" />
+          <rc.Keyword value="Creative Community Engagement" />
+          {/* Use a normal single quote here, because users are not likely to type out the proper apostrophe character */}
+          <rc.Keyword value="Overcoming Creator's Block" />
+          <rc.Keyword value="Creator Economy Malaysia" />
         </rc.Keywords>
       </rc.Page>
     </>

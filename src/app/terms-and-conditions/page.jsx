@@ -9,7 +9,7 @@ const Terms = () => {
     <>
       <PageMeta
         title="Terms and Conditions"
-        desc=""
+        desc="Understand Cult Creative’s Terms and Conditions. Discover our guidelines and agreements for using our platform and services."
       />
       <main className="flex min-h-screen flex-col bg-[#F4F4F4] text-white">
         <Header logo={"/images/logo.svg"} />

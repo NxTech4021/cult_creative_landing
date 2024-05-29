@@ -1,17 +1,19 @@
 import { Steps, Step } from "@/app/components/steps";
 
-const ThirdSection = () => {
-  const Step_Local = ({number, children}) => (
-    <Step borderColor="slate-50" number={number}>{children}</Step>
-  );
+const Step_Local = ({number, children}) => (
+  <Step borderColor="slate-50" number={number}>
+    {children}
+  </Step>
+);
 
+const ThirdSection = () => {
   return (
     <section className="py-8 bg-[#006D53] text-[#F4F4F4]">
-      <h1 className="font-aileron font-light text-7xl sm:text-6xl md:text-7xl lg:text-[7rem] text-center mt-4 -tracking-[.2rem] md:-tracking-[.5rem]">
+      <h2 className="font-aileron font-light text-7xl sm:text-6xl md:text-7xl lg:text-[7rem] text-center mt-4 -tracking-[.2rem] md:-tracking-[.5rem]">
         creator{" "}
         <span className="font-serif italic -tracking-[.3rem]">marketing</span>,
         simplified
-      </h1>
+      </h2>
       <Steps>
         <Step_Local number="01">
           Sign up and fill in a brief of your campaign objectives.

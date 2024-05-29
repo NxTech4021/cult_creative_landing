@@ -1,9 +1,9 @@
 "use client";
-import { motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
-import Carousel from "../../components/Carousel";
-import { Icon } from "@iconify/react";
 import { v4 as uuid } from "uuid";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { Icon } from "@iconify/react";
+import Carousel from "../../components/Carousel";
 
 const vids = [
   {
@@ -28,7 +28,7 @@ const vids = [
   },
 ];
 
-function CreatorSecond() {
+const CreatorSecond = () => {
   const [cur, setCur] = useState(0);
 
   useEffect(() => {
@@ -43,11 +43,11 @@ function CreatorSecond() {
 
   return (
     <section className="py-8 bg-[#F4F4F4] text-[#006D53]">
-      <h1 className="text-center font-aileron 2xl:text-8xl text-6xl lg:text-8xl md:text-8xl -tracking-[.1rem] ">
+      <h2 className="text-center font-aileron 2xl:text-8xl text-6xl lg:text-8xl md:text-8xl -tracking-[.1rem] ">
         we <span className="font-times italic -tracking-[.4rem]">match</span>{" "}
         <span className="font-times -tracking-[.4rem]">you</span> to{" "}
         <span className="font-times italic -tracking-[.4rem]">brands</span>
-      </h1>
+      </h2>
       <div className="lg:flex lg:flex-row justify-center gap-10 mt-16 px-9 hidden">
         {vids.map((elem) => (
           <div key={elem.id} className="flex flex-col">

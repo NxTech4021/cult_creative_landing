@@ -1,14 +1,13 @@
 "use client";
 import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const CreatorLast = () => {
   const color = "#006D53";
 
   return (
-    <section className="flex p-10  items-center justify-center bg-[#006D53]">
+    <section className={`flex p-10  items-center justify-center bg-[${color}]`}>
       <div className="basis-1/2 hidden xl:block">
         <Image
           src={
@@ -22,19 +21,18 @@ const CreatorLast = () => {
       </div>
       <div className="flex flex-col gap-5 text-[#F4F4F4]">
         <div className="flex flex-col gap-5">
-          <h1 className="sm:text-8xl text-8xl -tracking-[.35rem]">
+          <h2 className="sm:text-8xl text-8xl -tracking-[.35rem]">
             get{" "}
             <span className="font-times italic -tracking-[.6rem] text-[7rem]">
               started.
             </span>
-          </h1>
+          </h2>
         </div>
         <div className="flex flex-col gap-6">
-          <h1 className="text-xl font-bold -tracking-[.05rem]">
-            We’re excited to work together. <br />
-            Tell us who you are and we’ll get back to you with suitable brand
-            deals.
-          </h1>
+          <p className="text-xl font-bold -tracking-[.05rem]">
+            We’re excited to work together.<br />
+            Tell us who you are and we’ll get back to you with suitable brand deals.
+          </p>
           <div>
             <Link href={"/creators/contact"}>
               <motion.button

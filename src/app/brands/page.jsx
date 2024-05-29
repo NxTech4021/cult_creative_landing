@@ -19,7 +19,8 @@ const Brands = () => {
     <>
       <PageMeta
         title="Brands"
-        desc=""
+        desc="Tailored digital creator marketing solutions for SMEs and brands with flexible UGC and KOL campaign management to amplify your brand’s reach and engagement."
+        ogTitle="Digital Marketing Solutions for SMEs and Brands - Flexible UGC and KOL Campaign Management Agency"
       />
       <main className="flex min-h-screen flex-col">
         <Header logo="/images/logo.svg" />

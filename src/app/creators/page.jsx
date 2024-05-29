@@ -17,7 +17,8 @@ const Creators = () => {
     <>
       <PageMeta
         title="Creators"
-        desc=""
+        desc="Join Cult Creative and monetize your social media presence with branded deals, where creators get paid hassle-free within 30 days. Sign up, get synced to amazing brand deals, and upgrade your content creator game today."
+        ogTitle="Get Branded Deals for UGC - Earn Side Money while Creating Content"
       />
       <main className="flex min-h-screen flex-col">
         <Header logo={"/images/logo.svg"} />

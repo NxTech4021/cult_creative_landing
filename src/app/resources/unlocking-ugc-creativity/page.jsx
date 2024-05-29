@@ -9,7 +9,7 @@ const Resource5 = () => {
     <>
       <PageMeta
         title={title}
-        desc=""
+        desc="Read about the rise of user-generated content for marketing. Learn about what aspiring creators should do. See examples of impactful content formats for social media."
       />
       <rc.Page>
         <rc.Content>
@@ -76,9 +76,10 @@ const Resource5 = () => {
           </rc.p>
         </rc.Content>
         <rc.Keywords>
-          {/* TODO: No keywords given */}
-          <rc.Keyword value="" />
-          <rc.Keyword value="" />
+          <rc.Keyword value="UGC Marketing Guide" />
+          <rc.Keyword value="Content Creation Tips" />
+          <rc.Keyword value="Brand Deals for Creators" />
+          <rc.Keyword value="Creator Economy Malaysia" />
         </rc.Keywords>
       </rc.Page>
     </>
