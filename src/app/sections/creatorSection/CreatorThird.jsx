@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 import Link from "next/link";
@@ -71,7 +72,7 @@ const CreatorThird = () => {
           </p>
         </div>
         <div className="p-3">
-          <Link href={"/creators/contact"}>
+          <Link href="/creators/contact">
             <motion.button
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}

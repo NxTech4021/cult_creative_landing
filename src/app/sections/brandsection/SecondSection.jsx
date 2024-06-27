@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { Icon } from "@iconify/react";
 import Carousel from "../../components/Carousel";
@@ -44,7 +45,7 @@ const SecondSection = () => {
   }, [cur]);
 
   return (
-    <main className="bg-[#F4F4F4] py-10 text-[#8A5AFE]">
+    <section className="bg-[#F4F4F4] py-10 text-[#8A5AFE]">
       <div className="flex flex-col gap-5">
         <div className="flex xl:flex-row flex-col items-center gap-10 mx-auto px-8">
           <h2 className="lg:text-9xl text-7xl font-aileron font-bold text-center">
@@ -67,21 +68,21 @@ const SecondSection = () => {
             style={{ color: cur === 0 ? "#8A5AFE" : "black" }}
             width={100}
             onClick={() => setCur(0)}
-            cursor={"pointer"}
+            cursor="pointer"
           />
           <Icon
             icon="pepicons-pencil:line-x"
             style={{ color: cur === 1 ? "#8A5AFE" : "black" }}
             width={100}
             onClick={() => setCur(1)}
-            cursor={"pointer"}
+            cursor="pointer"
           />
           <Icon
             icon="pepicons-pencil:line-x"
             style={{ color: cur === 2 ? "#8A5AFE" : "black" }}
             width={100}
             onClick={() => setCur(2)}
-            cursor={"pointer"}
+            cursor="pointer"
           />
         </div>
         <div className="flex overflow-hidden">
@@ -97,14 +98,14 @@ const SecondSection = () => {
                   badge4={elem.badge4}
                   cur={cur}
                   setCur={setCur}
-                  contentStyle={"grid grid-cols-2 gap-3 px-2"}
+                  contentStyle="grid grid-cols-2 gap-3 px-2"
                 />
               </div>
             );
           })}
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 

@@ -1,8 +1,8 @@
 import { makeCanonicalUrl } from "@/app/components/misc";
+import Script from "next/script";
 import Header from "@/app/components/Header";
 import Image from "next/image";
 import LastSection from "@/app/sections/brandsection/LastSection";
-import Script from "next/script";
 
 export const metadata = {
   title: "Terms and Conditions",
@@ -25,13 +25,14 @@ const Terms = () => {
               (s[i].q=s[i].q||[]).push(arguments)});s[i].l=+new Date;c=n.createElement(t);
               h=n.getElementsByTagName(t)[0];c.src='//snid.snitcher.com/8426934.js';
               h.parentNode.insertBefore(c,h)}(window,document,'snid','script');
-                  
+
               snid('verify', '8426934');
             `,
         }}
       />
+
+      <Header />
       <main className="flex min-h-screen flex-col bg-[#F4F4F4] text-white">
-        <Header />
         <div className="text-center py-10 bg-[#8A5AFE]">
           <h1 className="text-2xl md:text-4xl lg:text-6xl font-times font-semibold">
             Terms and Conditions
@@ -98,8 +99,8 @@ const Terms = () => {
             draggable="false"
           /> */}
         </div>
-        <LastSection color={"#1340FF"} />
       </main>
+      <LastSection color="#1340FF" />
     </>
   );
 };

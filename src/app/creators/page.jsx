@@ -1,9 +1,9 @@
 import dynamic from "next/dynamic";
 import { makeCanonicalUrl } from "@/app/components/misc";
+import Script from "next/script";
 import Header from "@/app/components/Header";
 import { Suspense } from "react";
 import { Toaster } from "react-hot-toast";
-import Script from "next/script";
 
 const CreatorFirst = dynamic(() =>
   import("@/app/sections/creatorSection/CreatorFirst")
@@ -36,6 +36,8 @@ export const metadata = {
     "Join Cult Creative and monetise your social media presence with brand deals, where creators get paid hassle-free within 30 days. Sign up, get synced to amazing brand deals, and up your content creator game today.",
   openGraph: {
     title: "Get Branded Deals for UGC - Earn Side Money while Creating Content",
+    // Must specify because `openGraph` has been overriden here
+    images: ["/opengraph-image.png"],
   },
   alternates: {
     canonical: makeCanonicalUrl("/creators"),
@@ -54,13 +56,14 @@ const Creators = () => {
               (s[i].q=s[i].q||[]).push(arguments)});s[i].l=+new Date;c=n.createElement(t);
               h=n.getElementsByTagName(t)[0];c.src='//snid.snitcher.com/8426934.js';
               h.parentNode.insertBefore(c,h)}(window,document,'snid','script');
-                  
+
               snid('verify', '8426934');
             `,
         }}
       />
+
+      <Header />
       <main className="flex min-h-screen flex-col">
-        <Header />
         <Suspense fallback={<p>Loading...</p>}>
           <CreatorFirst />
           <CreatorSecond />
@@ -69,10 +72,10 @@ const Creators = () => {
           <CreatorFifth />
           <CreatorSixth />
           <CreatorLast />
-          <LastSection color="#006D53" />
           <Toaster position="top-center" />
         </Suspense>
       </main>
+      <LastSection color="#006D53" />
     </>
   );
 };

@@ -1,9 +1,10 @@
 "use client";
+
 import { v4 as uuid } from "uuid";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
-import Carousel from "../../components/Carousel";
+import Carousel from "@/app/components/Carousel";
 
 const vids = [
   {

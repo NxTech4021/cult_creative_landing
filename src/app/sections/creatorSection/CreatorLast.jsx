@@ -1,11 +1,12 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const CreatorLast = () => {
-  const color = "#006D53";
+const color = "#006D53";
 
+const CreatorLast = () => {
   return (
     <section className={`flex p-10  items-center justify-center bg-[${color}]`}>
       <div className="basis-1/2 hidden xl:block">

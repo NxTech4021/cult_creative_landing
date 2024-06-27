@@ -1,9 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { Icon } from "@iconify/react";
-import LoadingIcon from "@/app/components/Icons/loading-icon";
+
 import { v4 as uuidv4 } from "uuid";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import LoadingIcon from "@/app/components/Icons/loading-icon";
+import { Icon } from "@iconify/react";
 import Link from "next/link";
 
 const vid = [

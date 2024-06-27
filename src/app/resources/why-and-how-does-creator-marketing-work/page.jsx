@@ -17,7 +17,7 @@ export const metadata = {
   description: "Creator marketing thrives on authenticity. Brands can easily initiate UGC campaigns through platforms like Cult Creative, which connects brands with suitable creators hassle-free.",
   keywords: keywords,
   openGraph: {
-    images: [{ url: resources[5].image }],
+    images: [resources[5].image],
   },
   alternates: {
     canonical: makeCanonicalUrl("/resources/why-and-how-does-creator-marketing-work"),

@@ -1,4 +1,5 @@
 "use client";
+
 import dynamic from "next/dynamic";
 import useMediaQuery from "@/app/hooks/useMediaQuery";
 import VideoBig from "./VideoBig";

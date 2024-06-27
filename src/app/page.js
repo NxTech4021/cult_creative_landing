@@ -55,8 +55,8 @@ const Home = () => {
         }}
       />
 
+      <Header />
       <main className="flex min-h-screen flex-col max-w-[100vw]">
-        <Header />
         <Suspense fallback={<p>Loading...</p>}>
           <HomeFirst />
           <HomeTwo />
@@ -65,10 +65,10 @@ const Home = () => {
           <HomeFour />
           <HomeFive />
           <HomeSix />
-          <LastSection color="#1340FF" />
           <Toaster position="top-center" />
         </Suspense>
       </main>
+      <LastSection color="#1340FF" />
     </>
   );
 };

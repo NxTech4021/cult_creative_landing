@@ -1,39 +1,30 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 "use client";
-import React, { useState } from "react";
+
+import dynamic from "next/dynamic";
+import { v4 as uuidv4 } from "uuid";
+import { useState } from "react";
+import useMediaQuery from "@/app/hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-import { v4 as uuidv4 } from "uuid";
-import LoadingIcon from "@/app/components/Icons/loading-icon";
-import dynamic from "next/dynamic";
-import useMediaQuery from "@/app/hooks/useMediaQuery";
-// import { useMediaQuery } from "@uidotdev/usehooks";
 
-const VideoSmall = dynamic(() =>
-  import("@/app/sections/homeSection/VideoSmall")
-);
+const VideoSmall = dynamic(() => import("@/app/sections/homeSection/VideoSmall"));
 
-export function getVideos() {
-  const vids = [
-    {
-      id: uuidv4(),
-      name: "https://storage.googleapis.com/landing-cultcreative/main/Raea%20x%20Cult%20Creative%20(1).mov",
-    },
-    {
-      id: uuidv4(),
-      name: "https://storage.googleapis.com/landing-cultcreative/main/Bata%20x%20Cult%20Creative.mp4",
-    },
-  ];
-
-  return vids;
-}
+const vids = [
+  {
+    id: uuidv4(),
+    name: "https://storage.googleapis.com/landing-cultcreative/main/Raea%20x%20Cult%20Creative%20(1).mov",
+  },
+  {
+    id: uuidv4(),
+    name: "https://storage.googleapis.com/landing-cultcreative/main/Bata%20x%20Cult%20Creative.mp4",
+  },
+];
 
 const HomeFirst = () => {
   const [vidIndex, setVidIndex] = useState(0);
   const { isMdAndAbove } = useMediaQuery();
-
-  const vids = getVideos();
 
   return (
     <section className="p-8 bg-[#1340FF]">

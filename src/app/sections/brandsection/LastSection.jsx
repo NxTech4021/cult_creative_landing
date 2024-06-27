@@ -1,10 +1,11 @@
 "use client";
+
 import Footer from "@/app/components/Footer";
 import { Icon } from "@iconify/react";
 
 const LastSection = ({ color }) => {
   return (
-    <main className="bg-[#F4F4F4] py-10 px-20">
+    <section className="bg-[#F4F4F4] py-10 px-20">
       <Footer hoverText={color} />
       <div className="flex gap-3 mt-10 justify-end">
         <a href="https://wa.me/60162678757" target="_blank">
@@ -23,7 +24,7 @@ const LastSection = ({ color }) => {
           <Icon icon="mdi:youtube" width={30} color="black" />
         </a>
       </div>
-    </main>
+    </section>
   );
 };
 

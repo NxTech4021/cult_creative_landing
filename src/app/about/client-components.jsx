@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 
@@ -18,6 +19,12 @@ export const Vid = () => (
   >
     <source type="video/mp4" />
   </motion.video>
+);
+
+const RoundedItem = ({ children }) => (
+  <p className="rounded-full border-2 border-solid border-[#FF3600] lg:p-5 p-3 my-4 mx-3 text-center xl:w-[70%] w-full font-bold uppercase lg:-tracking-[.1rem] xl:-tracking-[.1rem]">
+    {children}
+  </p>
 );
 
 export const Section2 = () => (
@@ -75,10 +82,4 @@ export const Section2 = () => (
       </div>
     </div>
   </motion.div>
-);
-
-const RoundedItem = ({ children }) => (
-  <p className="rounded-full border-2 border-solid border-[#FF3600] lg:p-5 p-3 my-4 mx-3 text-center xl:w-[70%] w-full font-bold uppercase lg:-tracking-[.1rem] xl:-tracking-[.1rem]">
-    {children}
-  </p>
 );

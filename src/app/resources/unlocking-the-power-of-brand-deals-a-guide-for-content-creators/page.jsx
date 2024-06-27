@@ -17,7 +17,7 @@ export const metadata = {
   description: "A guide to securing brand deals with Cult Creative to simplify the process of connecting with brands, letting creators grow their careers authentically and lucratively.",
   keywords: keywords,
   openGraph: {
-    images: [{ url: resources[0].image }],
+    images: [resources[0].image],
   },
   alternates: {
     canonical: makeCanonicalUrl("/resources/unlocking-the-power-of-brand-deals-a-guide-for-content-creators"),

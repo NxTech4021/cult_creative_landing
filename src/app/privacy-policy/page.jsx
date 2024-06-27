@@ -14,8 +14,8 @@ export const metadata = {
 const PrivacyPolicy = () => {
   return (
     <>
+      <Header />
       <main className="flex min-h-screen flex-col bg-[#F4F4F4] text-white">
-        <Header />
         <div className="text-center py-10 bg-[#8A5AFE]">
           <p className="text-2xl md:text-4xl lg:text-6xl font-times font-semibold">
             Privacy Policy
@@ -36,8 +36,8 @@ const PrivacyPolicy = () => {
               />
             ))}
         </div>
-        <LastSection color="#1340FF" />
       </main>
+      <LastSection color="#1340FF" />
     </>
   );
 };

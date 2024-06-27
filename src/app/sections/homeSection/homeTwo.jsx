@@ -1,4 +1,3 @@
-import React from "react";
 import Companies from "@/app/components/Companies";
 
 const optics = [
@@ -56,17 +55,15 @@ const optics = [
 
 const HomeTwo = () => {
   return (
-    <main className="bg-[#F4F4F4] py-8 px-5">
+    <section className="bg-[#F4F4F4] py-8 px-5">
       <Companies
-        title={"as seen on"}
+        title="as seen on"
         companiesImages={optics}
-        rounded={"rounded-full"}
-        type={"optics"}
-        imgStyle={
-          "transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
-        }
+        rounded="rounded-full"
+        type="optics"
+        imgStyle="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
       />
-    </main>
+    </section>
   );
 };
 

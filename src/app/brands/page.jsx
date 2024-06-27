@@ -37,6 +37,8 @@ export const metadata = {
   openGraph: {
     title:
       "Digital Marketing Solutions for SMEs and Brands - Flexible UGC and KOL Campaign Management Agency",
+    // Must specify because `openGraph` has been overriden here
+    images: ["/opengraph-image.png"],
   },
   alternates: {
     canonical: makeCanonicalUrl("/brands"),
@@ -55,14 +57,14 @@ const Brands = () => {
               (s[i].q=s[i].q||[]).push(arguments)});s[i].l=+new Date;c=n.createElement(t);
               h=n.getElementsByTagName(t)[0];c.src='//snid.snitcher.com/8426934.js';
               h.parentNode.insertBefore(c,h)}(window,document,'snid','script');
-                  
+
               snid('verify', '8426934');
             `,
         }}
       />
 
+      <Header />
       <main className="flex min-h-screen flex-col">
-        <Header />
         <Suspense fallback={<p>Loading...</p>}>
           <FirstSection />
           <SecondSection />
@@ -71,10 +73,10 @@ const Brands = () => {
           <FifthSection />
           <SixthSection title="join 900+ other companies using Cult Creative" />
           <SeventhSection />
-          <LastSection color="#8A5AFE" />
           <Toaster position="top-center" />
         </Suspense>
       </main>
+      <LastSection color="#8A5AFE" />
     </>
   );
 };

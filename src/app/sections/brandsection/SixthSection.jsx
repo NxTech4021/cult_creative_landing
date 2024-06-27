@@ -1,5 +1,4 @@
-import React from "react";
-import Companies from "../../components/Companies";
+import Companies from "@/app/components/Companies";
 
 const companies = [
   {
@@ -38,14 +37,14 @@ const companies = [
 
 const SixthSection = ({ title }) => {
   return (
-    <main className="bg-[#F4F4F4] py-10 px-5">
+    <section className="bg-[#F4F4F4] py-10 px-5">
       <Companies
         title={title}
         companiesImages={companies}
-        type={"companies"}
-        rounded={"rounded-full"}
+        type="companies"
+        rounded="rounded-full"
       />
-    </main>
+    </section>
   );
 };
 

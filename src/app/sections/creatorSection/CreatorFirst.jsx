@@ -1,9 +1,10 @@
 "use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import { Icon } from "@iconify/react";
-import Link from "next/link";
+
 import { v4 as uuidv4 } from "uuid";
+import { useState } from "react";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Icon } from "@iconify/react";
 
 const CreatorFirst = () => {
   const vid = [

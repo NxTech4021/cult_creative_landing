@@ -18,7 +18,7 @@ export const metadata = {
   description: "Big brands today partner with creators for marketing. Learn about monetization strategies and how to engage authentically with your audience. And beware of competition and burnout.",
   keywords: keywords,
   openGraph: {
-    images: [{ url: resources[2].image }],
+    images: [resources[2].image],
   },
   alternates: {
     canonical: makeCanonicalUrl("/resources/turn-your-content-creation-passion-into-profit"),

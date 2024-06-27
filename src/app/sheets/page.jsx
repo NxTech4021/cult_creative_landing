@@ -1,8 +1,9 @@
 "use client";
+
 import { useState } from "react";
 import { getSheetData, createData } from "./google-sheet-action";
 
-export default function Page() {
+const Page = () => {
   const [value, setValue] = useState([]);
   const [name, setName] = useState();
 
@@ -41,4 +42,6 @@ export default function Page() {
       {value}
     </>
   );
-}
+};
+
+export default Page;
